@@ -1,0 +1,17 @@
+package Selenium;
+
+import java.sql.DriverManager;
+
+public class DBConnection {
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		
+		System.out.println("Driver loaded");
+		
+		DriverManager.getConnection("jdbc:mysql:https://db4free.net:3306/gts_db01", "gts_test11", "11@one@11")
+		
+	}
+
+}

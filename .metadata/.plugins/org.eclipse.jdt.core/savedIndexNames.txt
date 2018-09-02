@@ -1,0 +1,9 @@
+INDEX VERSION 1.130+D:\Work\Freelance\Trainings\Selenium\Selenium_Java\AdvanceSelenium\.metadata\.plugins\org.eclipse.jdt.core
+1889005174.index
+1657330681.index
+1797648589.index
+2545019003.index
+466996918.index
+2973315304.index
+866579828.index
+3461527863.index

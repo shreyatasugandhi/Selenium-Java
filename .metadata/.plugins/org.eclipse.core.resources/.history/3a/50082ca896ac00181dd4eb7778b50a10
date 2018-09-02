@@ -1,0 +1,28 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SeleniumActionsClass {
+
+	public static void main(String[] args) {
+		
+		// create driver object
+		WebDriver driver = new FirefoxDriver();
+		
+		//open URL into browser
+		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		
+		
+		//Login to the application
+		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
+		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
+		driver.findElement(By.id("btnLogin")).click();
+		
+		//
+		
+
+	}
+
+}
