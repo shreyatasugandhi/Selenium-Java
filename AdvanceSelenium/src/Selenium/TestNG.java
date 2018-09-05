@@ -24,7 +24,7 @@ public class TestNG {
 			System.setProperty("webdriver.chrome.driver","C:\\SeleniumBrowserDrivers\\chromedriver.exe");
 			
 			//Put a Implicit wait, this means that any search for elements on the page could take the time the implicit wait is set for before throwing exception 
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);			
 			
 			//maximize the window
 			driver.manage().window().maximize();
@@ -34,6 +34,18 @@ public class TestNG {
 			driver.get("https://opensource-demo.orangehrmlive.com/");
 			
 	 }
+	 
+	 @AfterTest
+		public void CleanUp() {
+				
+				//close the browser
+				driver.close();
+				
+				//Quit all the browser driver
+				driver.quit();
+			  
+		}
+
 	  
 	
 	  @Test
@@ -70,24 +82,25 @@ public class TestNG {
 			String actual = driver.findElement(By.cssSelector("h1")).getText();
 			String expected = "Dashboard";
 			assertEquals(actual, expected);
-	  }
-	  
-
-	@AfterTest
-	public void CleanUp() {
-
+						
+			
 			//Click on Sign off link
 			driver.findElement(By.id("welcome")).click();
 			driver.findElement(By.linkText("Logout")).click();
 		
-			//close the browser
-			driver.close();
-			
-			//Quit all the browser driver
-			driver.quit();
-		  
-	}
+	  }
+	  
+	  @Test
+	  public void Test2(){
+		  System.out.println("This is Test 2");
+	  }
+	  
+	  @Test
+	  public void Test3(){
+		  System.out.println("This is Test 3");
+	  }
 
+	
 
 
 }

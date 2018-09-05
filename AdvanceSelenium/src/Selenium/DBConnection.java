@@ -15,6 +15,7 @@ public class DBConnection {
 		
 		System.out.println("Driver loaded");
 		
+		
 		//Create connection
 		Connection con = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/gts_db01", "gts_test01", "11@one@11");
 		
@@ -29,12 +30,15 @@ public class DBConnection {
 		ResultSet rs = smt.executeQuery("select * from city");
 		System.out.println(rs);
 		
+				
+		
 		//run through each row of result for a column
 		while(rs.next())
 		{
 			String cityname = rs.getString("Name");
 			System.out.println("City name is " + cityname);
 		}
+		
 		
 		
 		//close the connection

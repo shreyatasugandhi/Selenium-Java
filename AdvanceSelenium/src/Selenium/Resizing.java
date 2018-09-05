@@ -34,7 +34,7 @@ public class Resizing {
 		WebElement resizer = driver.findElement(By.xpath("//*[@id='resizable']/div[3]"));
 		
 		
-		//Move the slider
+		//resize the box
 		act.moveToElement(resizer).dragAndDropBy(resizer, 200, 150).build().perform();
 		Thread.sleep(3000);		
 		

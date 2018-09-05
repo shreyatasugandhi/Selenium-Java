@@ -58,9 +58,12 @@ public class GetAttribute {
 			
 			//click on sign-in button
 			WebElement loginbtn = driver.findElement(By.id("btnLogin"));
+			String name_login = loginbtn.getAttribute("name");
+			
+			driver.findElement(By.name(name_login));
 			
 			//Get the attribute
-			System.out.println(loginbtn.getAttribute("name"));
+			System.out.println(name_login);
 			System.out.println(loginbtn.getAttribute("class"));
 			System.out.println(loginbtn.getAttribute("type"));
 			System.out.println(loginbtn.getAttribute("value"));

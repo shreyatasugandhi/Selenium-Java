@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;FreeCRMTest&apos;&#x0D;&#x0A;- Original project: &apos;FreeCRMTest&apos;&#x0D;&#x0A;- Original element: &apos;FreeCRMTest/src/test/java/com.qa.test&apos;" description="Delete element" element1="/src\/test\/java&lt;com.qa.test" element2="/src\/test\/java&lt;com.qa" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1536144180474" subPackages="false" version="1.0"/>
+</session>
