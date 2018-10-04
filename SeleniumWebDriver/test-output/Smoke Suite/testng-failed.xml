@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Smoke Suite]">
+  <test name="TestNG Testcases(failed)">
+    <classes>
+      <class name="TestAutomation.LoginWithTestNG">
+        <methods>
+          <include name="CleanUp"/>
+          <include name="Setup"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- TestAutomation.LoginWithTestNG -->
+      <class name="TestAutomation.TestNGTestCase">
+        <methods>
+          <include name="testCase1"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="testCase3"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestAutomation.TestNGTestCase -->
+    </classes>
+  </test> <!-- TestNG Testcases(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->

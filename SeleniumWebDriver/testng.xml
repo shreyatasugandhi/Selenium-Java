@@ -1,0 +1,8 @@
+<suite name="Smoke Suite" >
+	<test name="TestNG Testcases" >
+		<classes>
+			<class name="TestAutomation.TestNGTestCase" />
+			<class name="TestAutomation.LoginWithTestNG" />
+		</classes>
+	</test>
+</suite>
