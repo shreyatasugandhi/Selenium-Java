@@ -1,8 +1,3 @@
-/*
- * @author Naveen Khunteta
- * 
- */
-
 package com.crm.qa.testcases;
 
 import java.io.IOException;
@@ -42,13 +37,14 @@ public class ContactsPageTest extends TestBase{
 	
 	
 	@BeforeMethod
-	public void setUp() {
+	public void setUp() throws InterruptedException {
 		
-		initilization();
+		initialization();
 		testUtil = new TestUtil();
 		contactsPage = new ContactsPage();
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		TestUtil.runTimeInfo("error", "login successful");
 		testUtil.switchToFrame();
 		contactsPage = homePage.clickOnContactsLink();
 	}
@@ -71,7 +67,7 @@ public class ContactsPageTest extends TestBase{
 	}
 	
 	@DataProvider
-	public Object[][] getCRMTestData(){
+	public Object[][] getCRMTestData() throws InvalidFormatException{
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
 	}

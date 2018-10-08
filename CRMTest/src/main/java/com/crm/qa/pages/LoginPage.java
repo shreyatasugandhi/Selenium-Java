@@ -1,6 +1,5 @@
 package com.crm.qa.pages;
 
-//import org.eclipse.jetty.util.annotation.Name;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
