@@ -72,7 +72,7 @@ public class DynamicWebTable {
 			String username = driver.findElement(By.xpath(before+i+after)).getText();
 			if (username == uname){
 				System.out.println("Username found as" + username);
-				WebElement checkbox = driver.findElement(By.xpath(before+i+after.replace("td[2]", "td[1]")));
+				WebElement checkbox = driver.findElement(By.xpath(before+i+after.replace("td[2]/a[1]", "td[1]/input[1]")));
 				checkbox.click();
 			}
 		}
