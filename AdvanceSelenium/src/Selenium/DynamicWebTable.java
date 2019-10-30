@@ -79,8 +79,8 @@ public class DynamicWebTable {
 		
 		
 		//Method-2:
-		driver.findElement(By.xpath("//a[contains(text(),'john_smith1234')]/preceding-sibling::td//input[@type='checkbox']")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'john.smith')]/preceding-sibling::td//input[@type='checkbox']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'john_smith1234')]//parent::td/preceding-sibling::td/input[@type='checkbox']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'john.smith')]/preceding::td/input")).click();
 		
 	}
 
